@@ -16,8 +16,8 @@ end
 
 
 # include_recipe "./recipes/apache.rb"
-# include_recipe "./recipes/mariaDb.rb"
-include_recipe "./recipes/php.rb"
+include_recipe "./recipes/mariaDb.rb"
+# include_recipe "./recipes/php.rb"
 
 
 

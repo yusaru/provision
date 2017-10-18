@@ -32,4 +32,4 @@ sudo yum -y install git
 sudo yum -y install https://github.com/feedforce/ruby-rpm/releases/download/2.4.2/ruby-2.4.2-1.el7.centos.x86_64.rpm
                    #https://github.com/feedforce/ruby-rpm/releases/download/2.2.4/ruby-2.2.4-1.el7.centos.x86_64.rpm
 #### itamae
-gem i itamae
+sudo gem i itamae
