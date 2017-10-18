@@ -19,10 +19,10 @@ execute 'my.cnf backup' do
   user "root"
 end
 
-execute "mysqladmin root password" do
+execute "mysqladmin root password DBのパスワードを入力してください。" do
   user "root"
   # パスワードが未設定なら
-  # only_if "mysql -u root -e 'show databases' | grep information_schema"
+  only_if "mysql -u root -e 'show databases' | grep information_schema"
   command <<-EOL
 mysqladmin -u root password 'password'
 mysqladmin -p -u root -h localhost password 'password'
