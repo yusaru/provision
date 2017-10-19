@@ -24,3 +24,12 @@ service 'httpd' do
   user "root"
   action [:enable, :start]
 end
+
+
+# /etc/httpd/conf/httpd.conf
+## ServerName www.example.com:80
+## DocumentRoot "/var/www/html"
+
+# 参考
+
+## 外部アクセス制限 http://www.be-webdesigner.com/technotes/server/httpd_conf/security.htm

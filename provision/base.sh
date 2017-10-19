@@ -2,9 +2,6 @@
 
 echo '#### base.sh'
 
-#### mirror
-echo "prefer=ftp.jaist.ac.jp" >> /etc/yum/pluginconf.d/fastestmirror.conf
-
 #### update
 sudo yum update -y
 
@@ -21,14 +18,13 @@ sudo yum -y install git
 #     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 #     echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 #     source ~/.bash_profile
+#### ruby
+#     rbenv install 2.4.2
+#     rbenv rehash
+#     rbenv global 2.4.2
 # fi
 
-#### ruby
-# rbenv install 2.4.2
-# rbenv rehash
-# rbenv global 2.4.2
-
-# 高速!
+# ruby インストール高速!
 sudo yum -y install https://github.com/feedforce/ruby-rpm/releases/download/2.4.2/ruby-2.4.2-1.el7.centos.x86_64.rpm
                    #https://github.com/feedforce/ruby-rpm/releases/download/2.2.4/ruby-2.2.4-1.el7.centos.x86_64.rpm
 #### itamae
