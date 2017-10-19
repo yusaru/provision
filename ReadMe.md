@@ -1,9 +1,6 @@
 
-# 使い方
 
-Centos7にApache,MariaDb,PHP環境を構築します。
-
-* Centos
+*Windows*にCentos7にApache,MariaDb,PHP環境を構築します。
 
 ## 前準備
 
@@ -12,17 +9,22 @@ Centos7にApache,MariaDb,PHP環境を構築します。
 
 ## 仮想環境の構築
 
-ローカル環境にCloneして以下を実行
+インストール
+```
+git clone https://github.com/yusaru/provision.git
+```
 
 ### 仮想環境構築
 
-Vagrantfileがあるパスで
+Vagrantfileがあるパスで以下コマンドを実行
 
 ```
 vagrant up
 ```
 
-### Apache, MariaDb, PHP インストール
+### Apache, MariaDb, PHPをインストールします
+
+以下コマンドを実行
 
 ```
 vagrant ssh -c "itamae local /vagrant/provision/recipes/setup.rb"
