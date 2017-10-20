@@ -1,6 +1,17 @@
+# CentOS7 + Apache2.4 + MariaDb5.5 + PHP2.4 ローカル開発環境 on Windows
 
+*Windows*にCentos,Apache,MariaDb,PHP環境を構築します。
 
-*Windows*にCentos7,Apache,MariaDb,PHP環境を構築します。
+構築後確認したバージョンは以下になります。
+
+* CentOS Linux release 7.4.1708 (Core)
+* Apache/2.4.6
+* 5.5.56-MariaDB MariaDB Server
+* PHP 7.1.10
+
+## 確認環境
+
+windows8.1 Pro
 
 ## 前準備
 
@@ -20,7 +31,6 @@ CentosをVirtualBox上に構築します。
 ### **Vagrant**インストール
 
 VirtualBoxの操作、Centosの設定、プロビジョニングなどに使用します。  
-主に操作はVagrantを使用します。
 
 ダウンロード  
 [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
@@ -28,6 +38,13 @@ VirtualBoxの操作、Centosの設定、プロビジョニングなどに使用�
 > Vagrantについての概要は以下を参考  
 > [https://www.vagrantup.com/docs/](https://www.vagrantup.com/docs/)  
 > [https://qiita.com/kidach1/items/e63c1607705178aa257c](https://qiita.com/kidach1/items/e63c1607705178aa257c)  
+
+インストールが完了したら下記インストール確認を行い、**Vagrant Plugin**を導入します。  
+コマンドを実行してください。
+
+```
+vagrant plugin install vagrant-vbguest
+```
 
 ### インストール確認
 
@@ -73,6 +90,7 @@ itamaeの設定ファイルです。
 setup.rbをを実行してapache,php,mariadbを自動インストールします。
     * mariadbのルートパスは`password`です。  
 変更する場合は`mariaDb.rb`の設定値を変更してください。
+    * firewallはDisableです。必要に応じて立ち上げてください。
 
 
 仮想マシンの起動
