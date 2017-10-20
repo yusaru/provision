@@ -8,14 +8,14 @@
 
 bash環境の用意、ssh接続が可能になるので便利です。
 
-`https://git-for-windows.github.io/`
+[https://git-for-windows.github.io/](https://git-for-windows.github.io/)
 
 ### **VirtualBox**インストール
 
 CentosをVirtualBox上に構築します。
 
 ダウンロード  
-`https://www.virtualbox.org/wiki/Downloads`
+[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 ### **Vagrant**インストール
 
@@ -23,11 +23,11 @@ VirtualBoxの操作、Centosの設定、プロビジョニングなどに使用�
 主に操作はVagrantを使用します。
 
 ダウンロード  
-`https://www.vagrantup.com/downloads.html`
+[https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
 
 > Vagrantについての概要は以下を参考  
-> `https://www.vagrantup.com/docs/`  
-> `https://qiita.com/kidach1/items/e63c1607705178aa257c`  
+> [https://www.vagrantup.com/docs/](https://www.vagrantup.com/docs/)  
+> [https://qiita.com/kidach1/items/e63c1607705178aa257c](https://qiita.com/kidach1/items/e63c1607705178aa257c)  
 
 ### インストール確認
 
@@ -103,6 +103,8 @@ ssh vagrant@192.168.30.10
 ```
 vagrant ssh -c "itamae local /vagrant/provision/recipes/setup.rb"
 ```
+
+### 他ツール
 
 サーバ監視(munin)、サーバ管理(ajenti)ツールをインストールする場合は、
 `.\provision\recipes\setup.rb`の以下2つをコメントアウトしてください
