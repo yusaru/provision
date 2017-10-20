@@ -3,6 +3,7 @@
 ## リポジトリ追加
 package "http://rpms.famillecollet.com/enterprise/remi-release-7.rpm" do
   not_if 'rpm -q remi-release'
+  user "root"
 end
 
 ## PHP7.1.10のインストール
